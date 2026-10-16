@@ -47,6 +47,8 @@ Three moments from real Claude sessions with the Claro AI connector, recorded on
 
 ### Example reports
 
+All six are also on the developer hub, with a short brief for each: **[developers.casafari.com/docs/claro/examples](https://developers.casafari.com/docs/claro/examples)**.
+
 Each report was written by Claude from Claro AI data in a single chat. Open either one in your browser; each is one self-contained page.
 
 | | |
@@ -303,7 +305,8 @@ Skills: `casafari-comparables`, `casafari-area-insights`, `casafari-locations`, 
 
 ## Links
 
-- Docs: https://developers.casafari.com (machine-readable: https://developers.casafari.com/llms.txt)
+- Docs: https://developers.casafari.com
+- Example reports: https://developers.casafari.com/docs/claro/examples (machine-readable: https://developers.casafari.com/llms.txt)
 - Platform and console: https://platform.casafari.com
 - Terms: https://developers.casafari.com/legal/platform-terms
 - Contact: platform@casafari.com
