@@ -305,8 +305,8 @@ Skills: `casafari-comparables`, `casafari-area-insights`, `casafari-locations`, 
 
 ## Links
 
-- Docs: https://developers.casafari.com
-- Example reports: https://developers.casafari.com/docs/claro/examples (machine-readable: https://developers.casafari.com/llms.txt)
+- Docs: https://developers.casafari.com (machine-readable: https://developers.casafari.com/llms.txt)
+- Example reports: https://developers.casafari.com/docs/claro/examples
 - Platform and console: https://platform.casafari.com
 - Terms: https://developers.casafari.com/legal/platform-terms
 - Contact: platform@casafari.com
