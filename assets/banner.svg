@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 360" width="1280" height="360" role="img" aria-labelledby="t d">
+  <title id="t">Casafari MCP</title>
+  <desc id="d">Property data intelligence, built for AI agents: five MCP servers on one platform.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16121f"/>
+      <stop offset="1" stop-color="#2a2140"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.82" cy="0.35" r="0.55">
+      <stop offset="0" stop-color="#8b74c9" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#8b74c9" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="360" rx="20" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="20" fill="url(#glow)"/>
+  <g transform="translate(40 0)" fill="none" stroke="#b8a9e3" stroke-opacity="0.18">
+    <path d="M760 70 L1180 70 M760 130 L1180 130 M760 190 L1180 190 M760 250 L1180 250 M760 310 L1180 310"/>
+    <path d="M800 40 L800 330 M880 40 L880 330 M960 40 L960 330 M1040 40 L1040 330 M1120 40 L1120 330"/>
+  </g>
+  <g transform="translate(40 0)" stroke="#cbbcf0" stroke-opacity="0.55" stroke-width="1.5">
+    <line x1="880" y1="130" x2="960" y2="190"/><line x1="960" y1="190" x2="1040" y2="130"/>
+    <line x1="960" y1="190" x2="1040" y2="250"/><line x1="960" y1="190" x2="880" y2="250"/>
+    <line x1="960" y1="190" x2="1120" y2="190"/>
+  </g>
+  <g transform="translate(40 0)">
+    <circle cx="960" cy="190" r="26" fill="#f4f2ee"/>
+    <circle cx="880" cy="130" r="13" fill="#8b74c9"/><circle cx="1040" cy="130" r="13" fill="#8b74c9"/>
+    <circle cx="1040" cy="250" r="13" fill="#8b74c9"/><circle cx="880" cy="250" r="13" fill="#8b74c9"/>
+    <circle cx="1120" cy="190" r="13" fill="#d9b25f"/>
+  </g>
+  <g font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" fill="#f4f2ee">
+    <text x="64" y="96" font-size="22" fill="#cbbcf0" letter-spacing="3">CASAFARI · MCP</text>
+    <text x="64" y="160" font-size="44" font-weight="700">Property data intelligence,</text>
+    <text x="64" y="214" font-size="44" font-weight="700">built for AI agents.</text>
+    <text x="64" y="282" font-size="20" fill="#d8d2e6">Comparables · Area Insights · Location Lookup · AgentGraph AI · Claro AI</text>
+    <text x="64" y="318" font-size="18" fill="#a59cb8">platform.casafari.com · OAuth 2.1 · Streamable HTTP</text>
+  </g>
+</svg>
