@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "casafari-comparables": {
+      "url": "https://platform.casafari.com/mcp/comparables"
+    },
+    "casafari-area-insights": {
+      "url": "https://platform.casafari.com/mcp/area-insights"
+    },
+    "casafari-locations": {
+      "url": "https://platform.casafari.com/mcp/locations"
+    },
+    "casafari-agentgraph": {
+      "url": "https://platform.casafari.com/mcp/agentgraph"
+    },
+    "casafari-claro": {
+      "url": "https://platform.casafari.com/mcp/claro"
+    }
+  }
+}
