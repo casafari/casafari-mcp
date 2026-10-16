@@ -3,6 +3,7 @@
 </p>
 
 <p align="center">
+  <a href="https://claude.ai/directory/claro-ai-by-casafari"><img alt="In Claude's Connectors Directory" src="https://img.shields.io/badge/Claude-Connectors%20Directory-d97757"></a>
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=casafari"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-com.casafari-6a5596"></a>
   <a href="https://developers.casafari.com"><img alt="Docs" src="https://img.shields.io/badge/docs-developers.casafari.com-2a2140"></a>
   <a href="https://platform.casafari.com/console/"><img alt="Free plan" src="https://img.shields.io/badge/sign%20up-free%2C%20no%20card-d9b25f"></a>
@@ -21,6 +22,12 @@ Connect Claude, ChatGPT, Cursor, VS Code, Gemini CLI or your own agent to five M
 ```
 
 <sub>That is the whole setup in Claude Code. Every other client is below.</sub>
+
+## Now in Claude's Connectors Directory
+
+[![Claro AI by Casafari in Claude's Connectors Directory](assets/claude-directory.png)](https://claude.ai/directory/claro-ai-by-casafari)
+
+Claro AI is listed in [Claude's Connectors Directory](https://claude.ai/directory/claro-ai-by-casafari): open it in Claude, click **Add**, sign in with your Casafari platform account, and ask.
 
 ## One brief, one honest answer
 
