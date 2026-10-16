@@ -29,6 +29,33 @@ Connect Claude, ChatGPT, Cursor, VS Code, Gemini CLI or your own agent to five M
 
 Claro AI is listed in [Claude's Connectors Directory](https://claude.ai/directory/claro-ai-by-casafari): open it in Claude, click **Add**, sign in with your Casafari platform account, and ask.
 
+## Claro AI in Claude: real sessions
+
+Three moments from real Claude sessions with the Claro AI connector, recorded on 16 October 2026.
+
+**Claude sees the tools.** Ask what Claro can do and Claude lists its ten tools, from a brief in plain words to Location Intelligence for any point in Spain.
+
+<img src="assets/screenshots/claude-what-claro-can-do.png" alt="Claude listing the Claro AI tools available in the chat" width="720">
+
+**A brief becomes a ranked shortlist.** *"Specialty coffee shop, retail for rent in Valencia, 40-120 m², street level with shop window, cafetería licence, busy street or near offices and universities, under €3,500 a month."* Claro finds 546 matching premises, and Claude walks through the best six with rent, size, licence, footfall, residents and the cafés already nearby.
+
+<img src="assets/screenshots/claude-coffee-valencia-answer.png" alt="Claude answering a specialty coffee brief in Valencia with six premises from Claro AI" width="100%">
+
+**A committee-ready report, in one conversation.** For a mid-size fitness club across the Madrid and Barcelona metros, Claude screens 483 matches down to seven candidates, scores them, and writes a dossier per site: the case for it, the figures behind it and what due diligence must confirm.
+
+<img src="assets/screenshots/claude-fitness-report.png" alt="Claude's site selection report for a fitness club, with a dossier for Calle de Alcalá 332, Madrid" width="100%">
+
+### Example reports
+
+Both reports were written by Claude from Claro AI data in a single chat. Download either HTML file and open it in a browser; each is one self-contained page.
+
+| | |
+|---|---|
+| [<img src="assets/screenshots/report-fitness-cover.png" alt="Site Selection Report, mid-size fitness club" width="380">](examples/claude-reports/fitness-club-madrid-barcelona.html) | **[Site Selection Report: mid-size fitness club, Madrid and Barcelona metros](examples/claude-reports/fitness-club-madrid-barcelona.html)**<br>483 matches in 45 municipalities of 50,000+ people, ranked on residents per nearby gym; a weighted scoring matrix; seven site dossiers; risks and next steps. |
+| [<img src="assets/screenshots/report-coffee-cover.png" alt="Six doors for a specialty coffee shop in València" width="380">](examples/claude-reports/specialty-coffee-valencia.html) | **[Six doors for a specialty coffee shop in València](examples/claude-reports/specialty-coffee-valencia.html)**<br>546 matches, the six best fits mapped by footfall against rent, who walks past and when, what the neighbourhood earns, and where the València rental market is heading. |
+
+<sub>Edited for publication only to remove portal names and a client's name. Figures are Claro AI's: asking prices; footfall is an index for comparing places, not a head count.</sub>
+
 ## One brief, one honest answer
 
 A real call to Claro AI, run on 16 October 2026:
@@ -71,7 +98,6 @@ xychart-beta
 
 <sub>Median asking rent €1,400 a month. 927 of 963 fit the €4,000 budget. Asking prices, each unit counted once.</sub>
 
-<!-- Screenshot slot: the same brief answered inside Claude (assets/claude-claro.png), once captured from a real session. -->
 
 ## How it fits together
 
