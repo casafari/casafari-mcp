@@ -9,7 +9,7 @@ Casafari is the AI agent-native real estate data intelligence platform: a dedupl
 
 Server: `https://platform.casafari.com/mcp/agentgraph`. Germany only. Only accounts of verified businesses can use it: a `verification_required` error means the business is not verified yet; tell the person and do not retry.
 
-Tools: `agentgraph_find_location` (free, resolves a German place), `agentgraph_list_profiles` (free), `agentgraph_screen_agencies` and `agentgraph_screen_agents` (250 units), `agentgraph_agency_profile` and `agentgraph_agent_profile` (10), `agentgraph_territory_map` (20), `agentgraph_area_benchmark` (10), `agentgraph_partner_brief` (2,500), `agentgraph_save_to_watchlist` (5), `agentgraph_remove_from_watchlist`, `agentgraph_watchlist` (1), `agentgraph_watchlist_changes` (5).
+Tools: `agentgraph_find_location` (resolves a German place), `agentgraph_list_profiles`, `agentgraph_screen_agencies` and `agentgraph_screen_agents`, `agentgraph_agency_profile` and `agentgraph_agent_profile` (10), `agentgraph_territory_map` (20), `agentgraph_area_benchmark` (10), `agentgraph_partner_brief` (2,500), `agentgraph_save_to_watchlist` (5), `agentgraph_remove_from_watchlist`, `agentgraph_watchlist` (1), `agentgraph_watchlist_changes` (5).
 
 ## How to use
 

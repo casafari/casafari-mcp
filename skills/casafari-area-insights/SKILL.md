@@ -7,7 +7,7 @@ description: Understand a local property market with Casafari Area Insights: pri
 
 Casafari is the AI agent-native real estate data intelligence platform: a deduplicated, cleaned property graph, Europe's most complete property index. Count properties, never advertisements: a property advertised by several agencies is one record.
 
-Server: `https://platform.casafari.com/mcp/area-insights`. Tools (5 units each, the heatmap 10): `area-insights_get_time_series_data`, `area-insights_get_time_series_operations`, `area-insights_get_price_distribution`, `area-insights_get_bedrooms_distribution`, `area-insights_get_time_on_market_distribution`, `area-insights_get_heatmap`. `area-insights_get_current_datetime` (free) gives today's date for relative periods. `locations_search` (free) is on this server too, so one connector is enough.
+Server: `https://platform.casafari.com/mcp/area-insights`. Tools: `area-insights_get_time_series_data`, `area-insights_get_time_series_operations`, `area-insights_get_price_distribution`, `area-insights_get_bedrooms_distribution`, `area-insights_get_time_on_market_distribution`, `area-insights_get_heatmap`. `area-insights_get_current_datetime` (free) gives today's date for relative periods. `locations_search` (free) is on this server too, so one connector is enough.
 
 ## How to use
 

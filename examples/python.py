@@ -26,7 +26,7 @@ def call(method: str, path: str, **kw):
 places = call("GET", "/v1/locations/search", params={"query": "Madrid", "country": "ES", "size": 3})
 print(json.dumps(places, indent=2)[:800])
 
-# 2. Comparables (20 units): apartments for sale within 1 km of a point.
+# 2. Comparables: apartments for sale within 1 km of a point.
 comps = call("POST", "/v1/comparables/search", json={
     "comparables_count": 5,
     "operation": "sale",
@@ -39,7 +39,7 @@ comps = call("POST", "/v1/comparables/search", json={
 })
 print(json.dumps(comps, indent=2)[:800])
 
-# 3. Claro (40 units): commercial premises in Spain from a brief in plain words.
+# 3. Claro: commercial premises in Spain from a brief in plain words.
 claro = call("POST", "/v1/claro/search", params={"limit": 5}, json={
     "brief": "Burger restaurant in Madrid, ground floor, 120-250 m2, smoke outlet, rent under 8,000 a month",
 })

@@ -157,7 +157,7 @@ export CASAFARI_API_KEY=cf_sk_...   # from https://platform.casafari.com/console
 curl -H "Authorization: Bearer $CASAFARI_API_KEY" \
   "https://platform.casafari.com/v1/locations/search?query=Madrid&country=ES"
 
-# Comparables (20 units)
+# Comparables
 curl -X POST https://platform.casafari.com/v1/comparables/search \
   -H "Authorization: Bearer $CASAFARI_API_KEY" -H "Content-Type: application/json" \
   -d '{"operation":"sale","comparables_types":["apartment"],"comparables_count":5,

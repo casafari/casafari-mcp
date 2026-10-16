@@ -7,7 +7,7 @@ description: Value a property and find comparable properties with Casafari: comp
 
 Casafari is the AI agent-native real estate data intelligence platform: a deduplicated, cleaned property graph, Europe's most complete property index. Count properties, never advertisements: a property advertised by several agencies is one record.
 
-Server: `https://platform.casafari.com/mcp/comparables`. Tool: `comparables_get-comparables` (20 units). REST: `POST https://platform.casafari.com/v1/comparables/search` takes the same search.
+Server: `https://platform.casafari.com/mcp/comparables`. Tool: `comparables_get-comparables`. REST: `POST https://platform.casafari.com/v1/comparables/search` takes the same search.
 
 ## How to use
 

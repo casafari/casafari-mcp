@@ -23,7 +23,7 @@ async function call(method: string, path: string, body?: unknown): Promise<unkno
 const places = await call("GET", "/v1/locations/search?query=Madrid&country=ES&size=3");
 console.log(JSON.stringify(places, null, 2).slice(0, 800));
 
-// 2. Comparables (20 units): apartments for sale within 1 km of a point
+// 2. Comparables: apartments for sale within 1 km of a point
 const comps = await call("POST", "/v1/comparables/search", {
   comparables_count: 5,
   operation: "sale",
@@ -35,7 +35,7 @@ const comps = await call("POST", "/v1/comparables/search", {
 });
 console.log(JSON.stringify(comps, null, 2).slice(0, 800));
 
-// 3. Claro (40 units): commercial premises in Spain from a brief in plain words
+// 3. Claro: commercial premises in Spain from a brief in plain words
 const claro = await call("POST", "/v1/claro/search?limit=5", {
   brief: "Burger restaurant in Madrid, ground floor, 120-250 m2, smoke outlet, rent under 8,000 a month",
 });

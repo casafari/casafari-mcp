@@ -7,13 +7,13 @@ description: Find commercial premises for rent or sale across Spain (shops, rest
 
 Casafari is the AI agent-native real estate data intelligence platform: a deduplicated, cleaned property graph, Europe's most complete property index. Count properties, never advertisements: a property advertised by several agencies is one record. Claro is Casafari's AI search for commercial premises: it checks every premises in the property graph against each criterion of a brief.
 
-Server: `https://platform.casafari.com/mcp/claro`. REST: `https://platform.casafari.com/v1/claro` (OpenAPI https://platform.casafari.com/v1/claro/openapi.json). Premises cover all of Spain; plots cover Germany. Tools: `search_premises` (start here, 40 units), `refine_search`, `get_premises`, `compare_premises`, `market_snapshot`, `explain_location`, `brief_from_file`, `search_plots`, `get_plot`. The server card lists them with a `claro_` prefix.
+Server: `https://platform.casafari.com/mcp/claro`. REST: `https://platform.casafari.com/v1/claro` (OpenAPI https://platform.casafari.com/v1/claro/openapi.json). Premises cover all of Spain; plots cover Germany. Tools: `claro_search_premises` (start here), `claro_refine_search`, `claro_get_premises`, `claro_compare_premises`, `claro_market_snapshot`, `claro_explain_location`, `claro_brief_from_file`, `claro_search_plots`, `claro_get_plot`. The server card lists them with a `claro_` prefix.
 
 ## How to use
 
 1. Send the brief as the person wrote it (`brief`), or `criteria` for exact filters. For a keyword-only search with no model, send `criteria.keywords` and `"check": false`.
-2. Change a search with `refine_search`; open one result with `get_premises`; put 2 to 10 side by side with `compare_premises`. A brief file (PDF, Word, Excel, photo) goes through `brief_from_file`: show the person the brief and each requirement's quote and let them confirm before searching.
-3. `market_snapshot` gives what premises of a kind ask in a place.
+2. Change a search with `claro_refine_search`; open one result with `claro_get_premises`; put 2 to 10 side by side with `claro_compare_premises`. A brief file (PDF, Word, Excel, photo) goes through `claro_brief_from_file`: show the person the brief and each requirement's quote and let them confirm before searching.
+3. `claro_market_snapshot` gives what premises of a kind ask in a place.
 
 ## Reporting rules
 
