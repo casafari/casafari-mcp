@@ -1,6 +1,6 @@
 # Example reports written by Claude with Claro AI
 
-Each file is one self-contained HTML page (images embedded). Download it and open it in a browser.
+Each file is one self-contained HTML page (images embedded). Open them on the web: [fitness club](https://casafari.github.io/casafari-mcp/examples/claude-reports/fitness-club-madrid-barcelona.html), [specialty coffee](https://casafari.github.io/casafari-mcp/examples/claude-reports/specialty-coffee-valencia.html).
 
 | Report | Brief |
 |---|---|
