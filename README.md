@@ -47,12 +47,12 @@ Three moments from real Claude sessions with the Claro AI connector, recorded on
 
 ### Example reports
 
-Both reports were written by Claude from Claro AI data in a single chat. Download either HTML file and open it in a browser; each is one self-contained page.
+Both reports were written by Claude from Claro AI data in a single chat. Open either one in your browser; each is one self-contained page.
 
 | | |
 |---|---|
-| [<img src="assets/screenshots/report-fitness-cover.png" alt="Site Selection Report, mid-size fitness club" width="380">](examples/claude-reports/fitness-club-madrid-barcelona.html) | **[Site Selection Report: mid-size fitness club, Madrid and Barcelona metros](examples/claude-reports/fitness-club-madrid-barcelona.html)**<br>483 matches in 45 municipalities of 50,000+ people, ranked on residents per nearby gym; a weighted scoring matrix; seven site dossiers; risks and next steps. |
-| [<img src="assets/screenshots/report-coffee-cover.png" alt="Six doors for a specialty coffee shop in València" width="380">](examples/claude-reports/specialty-coffee-valencia.html) | **[Six doors for a specialty coffee shop in València](examples/claude-reports/specialty-coffee-valencia.html)**<br>546 matches, the six best fits mapped by footfall against rent, who walks past and when, what the neighbourhood earns, and where the València rental market is heading. |
+| [<img src="assets/screenshots/report-fitness-cover.png" alt="Site Selection Report, mid-size fitness club" width="380">](https://casafari.github.io/casafari-mcp/examples/claude-reports/fitness-club-madrid-barcelona.html) | **[Site Selection Report: mid-size fitness club, Madrid and Barcelona metros](https://casafari.github.io/casafari-mcp/examples/claude-reports/fitness-club-madrid-barcelona.html)**<br>483 matches in 45 municipalities of 50,000+ people, ranked on residents per nearby gym; a weighted scoring matrix; seven site dossiers; risks and next steps. |
+| [<img src="assets/screenshots/report-coffee-cover.png" alt="Six doors for a specialty coffee shop in València" width="380">](https://casafari.github.io/casafari-mcp/examples/claude-reports/specialty-coffee-valencia.html) | **[Six doors for a specialty coffee shop in València](https://casafari.github.io/casafari-mcp/examples/claude-reports/specialty-coffee-valencia.html)**<br>546 matches, the six best fits mapped by footfall against rent, who walks past and when, what the neighbourhood earns, and where the València rental market is heading. |
 
 <sub>Edited for publication only to remove portal names and a client's name. Figures are Claro AI's: asking prices; footfall is an index for comparing places, not a head count.</sub>
 
