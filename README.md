@@ -1,12 +1,97 @@
+<p align="center">
+  <img src="assets/banner.svg" alt="Casafari MCP: property data intelligence, built for AI agents" width="100%">
+</p>
+
+<p align="center">
+  <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=casafari"><img alt="MCP Registry" src="https://img.shields.io/badge/MCP%20Registry-com.casafari-6a5596"></a>
+  <a href="https://developers.casafari.com"><img alt="Docs" src="https://img.shields.io/badge/docs-developers.casafari.com-2a2140"></a>
+  <a href="https://platform.casafari.com/console/"><img alt="Free plan" src="https://img.shields.io/badge/sign%20up-free%2C%20no%20card-d9b25f"></a>
+  <a href="LICENSE"><img alt="Licence" src="https://img.shields.io/badge/licence-Apache--2.0-555"></a>
+</p>
+
 # Casafari MCP
 
-**Property data intelligence, built for AI agents.**
+**Property data intelligence, built for AI agents.** Casafari is the AI agent-native real estate data intelligence platform. Deduplicated, cleaned property graph. Europe's most complete property index.
 
-Casafari is the AI agent-native real estate data intelligence platform. Deduplicated, cleaned property graph. Europe's most complete property index.
+Connect Claude, ChatGPT, Cursor, VS Code, Gemini CLI or your own agent to five MCP servers on one account: comparables and price estimates, area insights, location lookup, agency analysis in Germany, and **Claro AI**, which finds commercial premises from a brief in plain words. Sign in with OAuth in the browser; there is no key to copy.
 
-This repository holds configuration, skills and examples to connect AI agents to the Casafari API and MCP Platform: a Claude Code plugin and marketplace, a Cursor plugin, a Gemini CLI extension, copy-paste configs for other clients and REST examples. It contains no backend code and no keys.
+```text
+/plugin marketplace add casafari/casafari-mcp
+/plugin install casafari@casafari
+```
 
-The platform is self-serve: sign up at https://platform.casafari.com/console/ (Free plan, no card). One account, one key and one balance of units cover every product. When units run out, REST answers `402 payment_required` and MCP answers with a payment error, both with an `upgrade_url` a person opens to pay.
+<sub>That is the whole setup in Claude Code. Every other client is below.</sub>
+
+## One brief, one honest answer
+
+A real call to Claro AI, run on 16 October 2026:
+
+> **"Specialty coffee shop in Barcelona, street level, 60-120 m², smoke outlet, rent under 4,000 euros a month"**
+
+Claro reads the brief into criteria, checks every commercial premises for rent in Barcelona against each one, and counts exactly:
+
+| | |
+|---|---|
+| **1,025** premises | contradict no criterion |
+| **69** of them | state every criterion in their own words |
+| **956** | leave something unsaid: marked *not stated*, never *no* |
+
+The top result, as the agent receives it:
+
+> **Shell unit in La Marina de Port, Barcelona** · 98 m² · **€1,650 a month**
+> ✅ price · ✅ size · ✅ street level · ✅ smoke outlet · ✅ suited to a café
+> Facts read from its own text: shop window, 6.22 m frontage, 3.74 m ceiling.
+> Around it: footfall index 99,070 within a 5-minute walk (weekdays 105,429, weekends 82,931), 24,511 residents within a 10-minute walk, 3 cafés nearby.
+> Every figure carries its unit, source and vintage. The link goes to the agency's own page.
+
+And the same answer as data, ready to chart:
+
+```mermaid
+xychart-beta
+    title "What each criterion leaves out (1,025 matches)"
+    x-axis ["Suited to a café", "Smoke outlet", "Street level", "Price", "Size"]
+    y-axis "Premises that state it" 0 --> 1100
+    bar [262, 342, 387, 927, 1001]
+```
+
+```mermaid
+xychart-beta
+    title "Asking rents, retail 60-120 m², Barcelona (963 with a stated rent)"
+    x-axis ["<1k", "1-2k", "2-3k", "3-4k", "4-5k", "5-6k", "6-7k", "7-8k", "8-9k", "9k+"]
+    y-axis "Premises" 0 --> 520
+    bar [235, 496, 162, 30, 14, 4, 6, 2, 0, 14]
+```
+
+<sub>Median asking rent €1,400 a month. 927 of 963 fit the €4,000 budget. Asking prices, each unit counted once.</sub>
+
+<!-- Screenshot slot: the same brief answered inside Claude (assets/claude-claro.png), once captured from a real session. -->
+
+## How it fits together
+
+```mermaid
+flowchart LR
+    A["Your agent<br/>Claude · ChatGPT · Cursor<br/>VS Code · Gemini CLI · custom"] -- "OAuth 2.1<br/>or cf_sk_ key" --> P(("platform.casafari.com"))
+    P --> L["Location Lookup<br/>/mcp/locations"]
+    P --> C["Comparables<br/>/mcp/comparables"]
+    P --> I["Area Insights<br/>/mcp/area-insights"]
+    P --> G["AgentGraph AI<br/>/mcp/agentgraph"]
+    P --> K["Claro AI<br/>/mcp/claro"]
+    L & C & I & G & K --> D[("Casafari property graph<br/>one record per property,<br/>with its full history")]
+```
+
+One account, one key and one balance of units work on every server. Location Lookup is free and gives the location ids the other products take.
+
+## What you can ask
+
+| Ask your agent | Server |
+|---|---|
+| *"What is a 3-bedroom flat of 110 m² near Avenida da Liberdade, Lisbon, worth? Use comparables within 1 km."* | Comparables |
+| *"How has the asking price per m² of flats in Valencia moved over the last three years?"* | Area Insights |
+| *"Which districts of Madrid have the highest price per m²?"* | Area Insights |
+| *"Find corner units in Madrid with a smoke outlet and no burger chain within 300 m."* | Claro AI |
+| *"Where in Barcelona do many people live and is there no gym?"* | Claro AI |
+| *"Which growing independent agencies in Munich should we approach?"* | AgentGraph AI |
+| *"What's the location id for Málaga?"* | Location Lookup |
 
 ## The five MCP servers
 
