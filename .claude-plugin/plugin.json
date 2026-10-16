@@ -1,0 +1,22 @@
+{
+  "name": "casafari",
+  "description": "Property data intelligence, built for AI agents. Casafari is the AI agent-native real estate data intelligence platform. Deduplicated, cleaned property graph. Europe's most complete property index.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Casafari",
+    "email": "platform@casafari.com",
+    "url": "https://developers.casafari.com"
+  },
+  "homepage": "https://developers.casafari.com",
+  "repository": "https://github.com/casafari/casafari-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "real-estate",
+    "property-data",
+    "mcp",
+    "comparables",
+    "valuation",
+    "area-insights",
+    "europe"
+  ]
+}

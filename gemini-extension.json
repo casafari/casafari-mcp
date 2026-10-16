@@ -1,0 +1,23 @@
+{
+  "name": "casafari",
+  "version": "0.1.0",
+  "description": "Property data intelligence, built for AI agents. Casafari is the AI agent-native real estate data intelligence platform. Deduplicated, cleaned property graph. Europe's most complete property index.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "casafari-comparables": {
+      "httpUrl": "https://platform.casafari.com/mcp/comparables"
+    },
+    "casafari-area-insights": {
+      "httpUrl": "https://platform.casafari.com/mcp/area-insights"
+    },
+    "casafari-locations": {
+      "httpUrl": "https://platform.casafari.com/mcp/locations"
+    },
+    "casafari-agentgraph": {
+      "httpUrl": "https://platform.casafari.com/mcp/agentgraph"
+    },
+    "casafari-claro": {
+      "httpUrl": "https://platform.casafari.com/mcp/claro"
+    }
+  }
+}
