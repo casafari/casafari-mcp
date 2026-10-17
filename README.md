@@ -29,6 +29,12 @@ Connect Claude, ChatGPT, Cursor, VS Code, Gemini CLI or your own agent to five M
 
 Claro AI is listed in [Claude's Connectors Directory](https://claude.ai/directory/claro-ai-by-casafari): open it in Claude, click **Add**, sign in with your Casafari platform account, and ask.
 
+## Now in the Cursor Directory
+
+[![Casafari in the Cursor Directory](assets/screenshots/cursor-directory.png)](https://cursor.directory/plugins/casafari)
+
+Casafari is listed in the [Cursor Directory](https://cursor.directory/plugins/casafari): open it, click **Add to Cursor** next to a server, and sign in with your Casafari platform account.
+
 ## Claro AI in Claude: real sessions
 
 Three moments from real Claude sessions with the Claro AI connector, recorded on 16 October 2026.
@@ -176,6 +182,8 @@ claude mcp add --transport http casafari-claro https://platform.casafari.com/mcp
 Docs: https://code.claude.com/docs/en/plugins and https://code.claude.com/docs/en/mcp
 
 ### Cursor
+
+From the [Cursor Directory](https://cursor.directory/plugins/casafari), or one-click install links below.
 
 One-click install, one link per server (format from https://cursor.com/docs/mcp/install-links):
 
