@@ -20,6 +20,6 @@
     "europe"
   ],
   "logo": "assets/icon-512.png",
-  "skills": "./skills/",
+  "skills": "./plugin/skills/",
   "mcpServers": "./mcp.json"
 }

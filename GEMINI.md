@@ -10,7 +10,7 @@ This extension connects five MCP servers (sign in with OAuth in the browser, run
 - `casafari-agentgraph`: agencies and agents in Germany; verified businesses only.
 - `casafari-claro`: commercial premises across Spain and commercial plots in Germany from a brief in plain words.
 
-Tools are named `<server>_<tool>`. Skills for each product are in `skills/`.
+Tools are named `<server>_<tool>`. Skills for each product are in `plugin/skills/`.
 
 ## Rules
 
