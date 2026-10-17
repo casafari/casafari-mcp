@@ -21,7 +21,7 @@
   ],
   "privacyPolicyUrl": "https://www.casafari.com/privacy-policy/",
   "icon": ".claude-plugin/icon.png",
-  "supportUrl": "mailto:platform@casafari.com",
+  "supportUrl": "https://github.com/casafari/casafari-mcp/issues",
   "documentationUrl": "https://developers.casafari.com/docs",
   "termsOfServiceUrl": "https://developers.casafari.com/legal/platform-terms"
 }
