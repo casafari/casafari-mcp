@@ -209,7 +209,7 @@ Or put this in `~/.cursor/mcp.json` (or `.cursor/mcp.json` in a project), schema
 }
 ```
 
-This repository is also a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, `skills/`), see https://cursor.com/docs/plugins.
+This repository is also a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, `plugin/skills/`), see https://cursor.com/docs/plugins.
 
 ### VS Code
 
