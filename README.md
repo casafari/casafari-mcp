@@ -146,13 +146,13 @@ One account, one key and one balance of units work on every server. Location Loo
 
 Each server has a server card at `<url>/.well-known/mcp/server-card.json`. Tools are named `<server>_<tool>`, and every server also has `account_status`.
 
-| Name | URL | What it does |
-|---|---|---|
-| `casafari-comparables` | `https://platform.casafari.com/mcp/comparables` | Comparable properties and price estimates for a subject property (`comparables_get_comparables`). |
-| `casafari-area-insights` | `https://platform.casafari.com/mcp/area-insights` | Price series, price, bedroom and time-on-market distributions, growth and volatility, heatmaps by district. |
-| `casafari-locations` | `https://platform.casafari.com/mcp/locations` | Find a place by name and get the location id every other product takes. Free. |
-| `casafari-agentgraph` | `https://platform.casafari.com/mcp/agentgraph` | Real estate agencies and agents in Germany: screens, profiles, territory maps, partner briefs. Verified businesses only. |
-| `casafari-claro` | `https://platform.casafari.com/mcp/claro` | Commercial premises across Spain and commercial plots in Germany, searched from a brief in plain words. |
+| Name | URL | What it does | Glama |
+|---|---|---|---|
+| `casafari-comparables` | `https://platform.casafari.com/mcp/comparables` | Comparable properties and price estimates for a subject property (`comparables_get_comparables`). | [![casafari-comparables on Glama](https://glama.ai/mcp/connectors/com.casafari/comparables/badges/score.svg)](https://glama.ai/mcp/connectors/com.casafari/comparables) |
+| `casafari-area-insights` | `https://platform.casafari.com/mcp/area-insights` | Price series, price, bedroom and time-on-market distributions, growth and volatility, heatmaps by district. | [![casafari-area-insights on Glama](https://glama.ai/mcp/connectors/com.casafari/area-insights/badges/score.svg)](https://glama.ai/mcp/connectors/com.casafari/area-insights) |
+| `casafari-locations` | `https://platform.casafari.com/mcp/locations` | Find a place by name and get the location id every other product takes. Free. | [![casafari-locations on Glama](https://glama.ai/mcp/connectors/com.casafari/locations/badges/score.svg)](https://glama.ai/mcp/connectors/com.casafari/locations) |
+| `casafari-agentgraph` | `https://platform.casafari.com/mcp/agentgraph` | Real estate agencies and agents in Germany: screens, profiles, territory maps, partner briefs. Verified businesses only. | [![casafari-agentgraph on Glama](https://glama.ai/mcp/connectors/com.casafari/agentgraph/badges/score.svg)](https://glama.ai/mcp/connectors/com.casafari/agentgraph) |
+| `casafari-claro` | `https://platform.casafari.com/mcp/claro` | Commercial premises across Spain and commercial plots in Germany, searched from a brief in plain words. | [![casafari-claro on Glama](https://glama.ai/mcp/connectors/com.casafari/claro/badges/score.svg)](https://glama.ai/mcp/connectors/com.casafari/claro) |
 
 MCP clients sign in with OAuth 2.1 in the browser: the server answers `401` with a `WWW-Authenticate` header that points to its protected-resource metadata, and a client discovers the rest from there. No key to copy. Unattended agents use a platform API key instead (`cf_sk_...`, as `Authorization: Bearer` or `X-API-Key`).
 
