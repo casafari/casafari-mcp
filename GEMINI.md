@@ -6,7 +6,7 @@ This extension connects five MCP servers (sign in with OAuth in the browser, run
 
 - `casafari-locations`: find a place by name and get the location id the other products take (free).
 - `casafari-area-insights`: price series, price, bedroom and time-on-market distributions, heatmaps.
-- `casafari-comparables`: comparable properties and price estimates (`comparables_get-comparables`).
+- `casafari-comparables`: comparable properties and price estimates (`comparables_get_comparables`).
 - `casafari-agentgraph`: agencies and agents in Germany; verified businesses only.
 - `casafari-claro`: commercial premises across Spain and commercial plots in Germany from a brief in plain words.
 

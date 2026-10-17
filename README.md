@@ -144,7 +144,7 @@ Each server has a server card at `<url>/.well-known/mcp/server-card.json`. Tools
 
 | Name | URL | What it does |
 |---|---|---|
-| `casafari-comparables` | `https://platform.casafari.com/mcp/comparables` | Comparable properties and price estimates for a subject property (`comparables_get-comparables`). |
+| `casafari-comparables` | `https://platform.casafari.com/mcp/comparables` | Comparable properties and price estimates for a subject property (`comparables_get_comparables`). |
 | `casafari-area-insights` | `https://platform.casafari.com/mcp/area-insights` | Price series, price, bedroom and time-on-market distributions, growth and volatility, heatmaps by district. |
 | `casafari-locations` | `https://platform.casafari.com/mcp/locations` | Find a place by name and get the location id every other product takes. Free. |
 | `casafari-agentgraph` | `https://platform.casafari.com/mcp/agentgraph` | Real estate agencies and agents in Germany: screens, profiles, territory maps, partner briefs. Verified businesses only. |
