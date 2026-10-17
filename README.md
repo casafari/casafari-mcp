@@ -209,7 +209,7 @@ Or put this in `~/.cursor/mcp.json` (or `.cursor/mcp.json` in a project), schema
 }
 ```
 
-This repository is also a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, `skills/`), see https://cursor.com/docs/plugins.
+This repository is also a Cursor plugin (`.cursor-plugin/plugin.json`, `mcp.json`, `plugin/skills/`), see https://cursor.com/docs/plugins.
 
 ### VS Code
 
@@ -296,8 +296,8 @@ The existing Casafari API at api.casafari.com is for contract clients only; its 
 
 | Path | For |
 |---|---|
-| `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.mcp.json`, `skills/` | Claude Code plugin and self-hosted marketplace |
-| `.cursor-plugin/plugin.json`, `mcp.json`, `skills/` | Cursor plugin |
+| `plugin/` (`.claude-plugin/plugin.json`, `.mcp.json`, `skills/`, icon), `.claude-plugin/marketplace.json` | Claude Code plugin and self-hosted marketplace |
+| `.cursor-plugin/plugin.json`, `mcp.json`, `plugin/skills/` | Cursor plugin |
 | `gemini-extension.json`, `GEMINI.md` | Gemini CLI extension |
 | `examples/` | REST examples |
 

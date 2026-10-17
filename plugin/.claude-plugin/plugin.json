@@ -18,5 +18,7 @@
     "valuation",
     "area-insights",
     "europe"
-  ]
+  ],
+  "privacyPolicyUrl": "https://www.casafari.com/privacy-policy/",
+  "icon": ".claude-plugin/icon.png"
 }
