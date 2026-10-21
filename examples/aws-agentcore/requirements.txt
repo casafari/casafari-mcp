@@ -1,0 +1,4 @@
+# Checked with boto3 1.43.115, strands-agents 1.61.1 and mcp-proxy-for-aws 1.7.0 (2026-10-20).
+boto3>=1.43
+strands-agents>=1.61
+mcp-proxy-for-aws>=1.7

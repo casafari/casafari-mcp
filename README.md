@@ -282,6 +282,12 @@ Docs: https://github.com/google-gemini/gemini-cli/tree/main/docs/extensions
 
 Any client that supports remote MCP servers over Streamable HTTP with OAuth works: give it a server URL from the table.
 
+### AWS: Kiro, Amazon Quick and Amazon Bedrock AgentCore Gateway
+
+Kiro and Amazon Quick take a server URL and sign in with OAuth, like the clients above. Amazon Bedrock AgentCore Gateway adds each server as an MCP server target and sends a platform API key (`X-API-Key`) that it keeps in AgentCore Identity. Steps for all three: https://developers.casafari.com/docs/aws
+
+Runnable sample in Python: [`examples/aws-agentcore`](examples/aws-agentcore) creates a gateway with Location Lookup, Comparables and Area Insights as targets and asks a Strands Agents agent one question through it. Tool calls spend tokens from your Casafari account (Location Lookup is free) and the gateway and model cost AWS charges; its README lists both.
+
 ## REST quick start
 
 Base URL `https://platform.casafari.com/v1`, OpenAPI at https://platform.casafari.com/v1/openapi.json (one per product at `/v1/<product>/openapi.json`, Claro at https://platform.casafari.com/v1/claro/openapi.json). Send the key as `Authorization: Bearer` or `X-API-Key`, never in a query string.
@@ -311,7 +317,7 @@ The existing Casafari API at api.casafari.com is for contract clients only; its 
 | `plugin/` (`.claude-plugin/plugin.json`, `.mcp.json`, `skills/`, icon), `.claude-plugin/marketplace.json` | Claude Code plugin and self-hosted marketplace |
 | `.cursor-plugin/plugin.json`, `mcp.json`, `plugin/skills/` | Cursor plugin |
 | `gemini-extension.json`, `GEMINI.md` | Gemini CLI extension |
-| `examples/` | REST examples |
+| `examples/` | REST examples; `examples/aws-agentcore/`, the Amazon Bedrock AgentCore Gateway sample |
 
 Skills: `casafari-comparables`, `casafari-area-insights`, `casafari-locations`, `casafari-agentgraph`, `casafari-claro`.
 
