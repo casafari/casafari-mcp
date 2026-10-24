@@ -1,0 +1,42 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "casafari-location-lookup",
+  "version": "1.0.0",
+  "description": "Casafari Location Lookup: turn a place name into the Casafari location id that Comparables and Area Insights take. Free.",
+  "author": {
+    "name": "Casafari",
+    "email": "platform@casafari.com",
+    "url": "https://www.casafari.com"
+  },
+  "homepage": "https://developers.casafari.com/docs/tools",
+  "repository": "https://github.com/casafari/casafari-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "real-estate",
+    "geocoding",
+    "locations",
+    "europe"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Location Lookup by Casafari",
+        "shortDescription": "Find Casafari location ids",
+        "longDescription": "Find any place by name, from a country to a neighbourhood, and get the Casafari location id with its type and its parents (municipality, province, region). Free to call. Use it with Comparables and Area Insights by Casafari to ask about a precise area. Coverage: Andorra, Austria, Belgium, France, Germany, Greece, Italy, Luxembourg, Monaco, Poland, Portugal, San Marino, Spain and Switzerland. Built by Casafari, the AI agent-native real estate data intelligence platform.",
+        "developerName": "Casafari",
+        "category": "Business",
+        "websiteURL": "https://developers.casafari.com/docs/tools",
+        "privacyPolicyURL": "https://www.casafari.com/privacy-policy/",
+        "termsOfServiceURL": "https://developers.casafari.com/legal/platform-terms",
+        "defaultPrompt": [
+          "Find the Casafari location id for Chamberí, Madrid",
+          "Which places called Santa Cruz are in Casafari's locations?",
+          "Show the districts of Lisbon"
+        ],
+        "brandColor": "#6a5596",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "casafari-area-insights",
+  "version": "1.0.0",
+  "description": "Casafari Area Insights: price trends, distributions, time on market and district heatmaps for property markets in 14 European countries.",
+  "author": {
+    "name": "Casafari",
+    "email": "platform@casafari.com",
+    "url": "https://www.casafari.com"
+  },
+  "homepage": "https://developers.casafari.com/docs/area-insights",
+  "repository": "https://github.com/casafari/casafari-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "real-estate",
+    "market-data",
+    "property-prices",
+    "analytics",
+    "europe"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Area Insights by Casafari",
+        "shortDescription": "Property market trends by area",
+        "longDescription": "Ask how a property market behaves in any area: average prices and price per m² over time, new properties on the market, stock, sales and rentals, growth and volatility, the spread of prices, bedrooms and time on the market, and heatmaps that compare the districts of a city. Coverage: Andorra, Austria, Belgium, France, Germany, Greece, Italy, Luxembourg, Monaco, Poland, Portugal, San Marino, Spain and Switzerland. Built by Casafari, the AI agent-native real estate data intelligence platform; each property counts once in its deduplicated property graph. Place names resolve to locations for free on the same connector.",
+        "developerName": "Casafari",
+        "category": "Business",
+        "websiteURL": "https://developers.casafari.com/docs/area-insights",
+        "privacyPolicyURL": "https://www.casafari.com/privacy-policy/",
+        "termsOfServiceURL": "https://developers.casafari.com/legal/platform-terms",
+        "defaultPrompt": [
+          "How have flat prices per m² in Lisbon changed over the last 3 years?",
+          "Which districts of Madrid have the highest rents per m²?",
+          "How long do houses stay on the market in Nice?"
+        ],
+        "brandColor": "#6a5596",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
