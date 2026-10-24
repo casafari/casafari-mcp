@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "casafari-comparables",
+  "version": "1.0.0",
+  "description": "Casafari Comparables: estimated prices, comparable properties and, in Spain, registry sale prices around any property in 14 European countries.",
+  "author": {
+    "name": "Casafari",
+    "email": "platform@casafari.com",
+    "url": "https://www.casafari.com"
+  },
+  "homepage": "https://developers.casafari.com/docs/comparables-valuation",
+  "repository": "https://github.com/casafari/casafari-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "real-estate",
+    "valuation",
+    "comparables",
+    "property-prices",
+    "europe"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Comparables by Casafari",
+        "shortDescription": "Property valuation and comps",
+        "longDescription": "Value any property from an address, a point on the map or, in Spain, a cadastral reference. Comparables returns an estimated sale price or rent with its range, the comparable properties behind it (size, price, price per m², distance) and, in Spain, prices from official registry records. Works for homes and for commercial property: shops, offices, warehouses, restaurant premises. Coverage: Andorra, Austria, Belgium, France, Germany, Greece, Italy, Luxembourg, Monaco, Poland, Portugal, San Marino, Spain and Switzerland. Built by Casafari, the AI agent-native real estate data intelligence platform; each property counts once in its deduplicated property graph.",
+        "developerName": "Casafari",
+        "category": "Business",
+        "websiteURL": "https://developers.casafari.com/docs/comparables-valuation",
+        "privacyPolicyURL": "https://www.casafari.com/privacy-policy/",
+        "termsOfServiceURL": "https://developers.casafari.com/legal/platform-terms",
+        "defaultPrompt": [
+          "What is a 90 m² flat at Calle de Alcalá 120, Madrid worth?",
+          "Find rental comparables for a 150 m² shop in Lisbon's Baixa",
+          "Estimate the rent of a 2-bedroom apartment near Rue Royale, Brussels"
+        ],
+        "brandColor": "#6a5596",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}

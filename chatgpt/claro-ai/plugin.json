@@ -1,0 +1,44 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "claro-ai",
+  "version": "1.1.0",
+  "description": "Claro, Casafari's business expansion search agent: commercial premises and plots in Spain and Germany from a brief in plain words, each criterion met, not met or not stated with its evidence, plus Location Intelligence.",
+  "author": {
+    "name": "Casafari",
+    "email": "platform@casafari.com",
+    "url": "https://www.casafari.com"
+  },
+  "homepage": "https://developers.casafari.com/docs/claro",
+  "repository": "https://github.com/casafari/casafari-mcp",
+  "license": "Apache-2.0",
+  "keywords": [
+    "real-estate",
+    "commercial-property",
+    "site-selection",
+    "spain",
+    "location-intelligence",
+    "germany"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Claro AI by Casafari",
+        "shortDescription": "Commercial premises, ES & DE",
+        "longDescription": "Describe the site a business needs in plain words, in any language, and Claro finds the commercial premises for rent or sale across Spain and Germany that meet it: shops, restaurant premises, offices, warehouses. Every result says which criteria it meets, does not meet or does not state, with the sentence or figure behind each answer, plus Location Intelligence: footfall, residents, spending power and places nearby. Also commercial plots in Germany. Built by Casafari, the AI agent-native real estate data intelligence platform.",
+        "developerName": "Casafari",
+        "category": "Business",
+        "websiteURL": "https://developers.casafari.com/docs/claro",
+        "privacyPolicyURL": "https://www.casafari.com/privacy-policy/",
+        "termsOfServiceURL": "https://developers.casafari.com/legal/platform-terms",
+        "defaultPrompt": [
+          "Find street-level premises for a café in Barcelona, 60-120 m², with a smoke outlet, under €4,000 a month",
+          "Compare the footfall around three premises in Madrid",
+          "Find gym premises in Valencia with no gym within 500 m"
+        ],
+        "brandColor": "#6a5596",
+        "composerIcon": "./assets/composer-icon.png",
+        "logo": "./assets/logo.png"
+      }
+    }
+  }
+}
