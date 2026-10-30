@@ -1,0 +1,541 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Commercial plots in Germany: sample report · Claro by Casafari</title>
+<meta name="description" content="Sample report: plots of land in Germany read for what their own text says may be built, with counts per Land and example searches run on Claro by Casafari.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one reading column; wide tables scroll inside their own frame. Claro's light paper look, deliberately one theme. */
+:root {
+  --paper: #f8f7f4; --surface: #fdfdfc; --surface-2: #f0eee9;
+  --ink: #24212b; --ink-soft: #57525f; --line: #e3dfd7;
+  --violet: #6a3fd0; --violet-deep: #5530ad; --violet-tint: #ede6fc;
+  --gold: #8a6512; --gold-tint: #f6ecd6;
+  --font-sans: "Geist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 15px/1.6 var(--font-sans); }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 72px; display: grid; gap: 56px; }
+h1, h2, h3 { text-wrap: balance; margin: 0; letter-spacing: -0.01em; }
+h1 { font-size: clamp(30px, 4.6vw, 44px); line-height: 1.1; font-weight: 700; }
+h2 { font-size: 22px; font-weight: 650; }
+h3 { font-size: 16px; font-weight: 600; }
+p { margin: 0; max-width: 68ch; }
+a { color: var(--violet-deep); text-underline-offset: 2px; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--violet); outline-offset: 2px; border-radius: 3px; }
+.eyebrow { font: 500 12px/1 var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em; color: var(--violet-deep); }
+.intro { display: grid; gap: 14px; }
+.lede { font-size: 17px; color: var(--ink-soft); }
+.meta { font: 400 12.5px/1.5 var(--font-mono); color: var(--ink-soft); }
+section { display: grid; gap: 18px; }
+section > header { display: grid; gap: 6px; }
+.figures { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.figure { background: var(--surface); padding: 18px 20px; display: grid; gap: 4px; align-content: start; }
+.figure .v { font: 600 28px/1.1 var(--font-sans); font-variant-numeric: tabular-nums; }
+.figure.key .v { color: var(--violet-deep); }
+.figure .k { color: var(--ink-soft); font-size: 13.5px; }
+.table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 10px 14px; border-top: 1px solid var(--line); vertical-align: top; }
+thead th { border-top: 0; font: 500 11.5px/1.3 var(--font-mono); text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); background: var(--surface-2); white-space: nowrap; }
+td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+td.strong { font-weight: 600; }
+.muted { color: var(--ink-soft); }
+.bar-cell { width: 34%; min-width: 120px; vertical-align: middle; }
+.bar { display: block; height: 8px; border-radius: 4px; background: #cfc9d9; }
+.bar.on { background: var(--violet); }
+.levels th[scope=row] { display: grid; gap: 2px; font-weight: 500; }
+.levels .note { font-size: 12.5px; color: var(--ink-soft); font-weight: 400; }
+.levels tr.in th .lvl { font-weight: 600; }
+.chip { display: inline-block; font: 500 11px/1 var(--font-mono); letter-spacing: 0.04em; text-transform: uppercase; padding: 5px 8px; border-radius: 999px; background: var(--violet-tint); color: var(--violet-deep); white-space: nowrap; }
+.chip.off { background: var(--surface-2); color: var(--ink-soft); }
+.chip.lvl-zoned_mixed_or_special, .chip.lvl-commercial_use_stated { background: var(--gold-tint); color: var(--gold); }
+.examples { display: grid; gap: 28px; }
+.example { display: grid; gap: 12px; }
+.example header { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 6px 16px; }
+.count { color: var(--ink-soft); font-size: 14px; }
+.count strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+details summary { cursor: pointer; font-size: 13px; color: var(--violet-deep); width: max-content; }
+pre { margin: 8px 0 0; padding: 12px 14px; background: var(--surface-2); border-radius: 8px; overflow-x: auto; font: 12.5px/1.5 var(--font-mono); }
+.results td { font-size: 13.5px; }
+.results .plot { min-width: 220px; }
+.ptitle { font-weight: 500; display: block; }
+.sub { display: block; font-size: 12.5px; color: var(--ink-soft); margin-top: 2px; }
+.evidence { min-width: 260px; }
+.evidence q { display: block; margin-top: 6px; font-style: italic; quotes: "\201E" "\201C"; }
+.columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
+.columns > div { display: grid; gap: 10px; align-content: start; min-width: 0; }
+ul { margin: 0; padding-left: 18px; display: grid; gap: 8px; max-width: 68ch; }
+ol { margin: 0; padding-left: 20px; display: grid; gap: 10px; max-width: 72ch; }
+.questions li::marker { color: var(--violet-deep); font-weight: 600; }
+code { font-family: var(--font-mono); font-size: 0.92em; }
+.footnote { font-size: 13px; color: var(--ink-soft); max-width: 80ch; }
+footer { color: var(--ink-soft); font-size: 13px; border-top: 1px solid var(--line); padding-top: 18px; display: grid; gap: 6px; }
+@media (max-width: 560px) { .wrap { padding-block: 28px 56px; gap: 44px; } .bar-cell { min-width: 80px; } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto; } }
+</style>
+
+<main class="wrap">
+  <div class="intro">
+    <span class="eyebrow">Claro by Casafari · plots in Germany · sample report</span>
+    <h1>Where a commercial building can go in Germany</h1>
+    <p class="lede">Every plot of land for sale or rent in Casafari's German property graph, read for what its own text says can be built on it. A sample of what Claro's plots search returns, for developers, logistics and expansion teams.</p>
+    <p class="meta">Data as of 18 October 2026 · 55,409 active plots · read with Gemini, every level backed by a quote from the property's text</p>
+  </div>
+
+  <div class="figures" role="list">
+    <div class="figure" role="listitem"><span class="v">51,530</span><span class="k">plots in Germany, each counted once however many agencies advertise it</span></div>
+    <div class="figure key" role="listitem"><span class="v">3,650</span><span class="k">where the text states commercial zoning or commercial use (7.1%)</span></div>
+    <div class="figure key" role="listitem"><span class="v">1,215</span><span class="k">of those with 5,000 m² or more</span></div>
+    <div class="figure" role="listitem"><span class="v">16</span><span class="k">Länder covered, from Bayern (660) to Bremen (27)</span></div>
+  </div>
+
+  <section>
+    <header><h2>What each plot's text says can be built</h2>
+    <p>Each plot gets one level, from what its own text states, with the quote it rests on. A plot whose text says nothing is never guessed: it is "nothing stated". Claro's plots search shows the first three levels by default; any other level can be switched on.</p></header>
+    <div class="table-wrap"><table class="levels">
+      <thead><tr><th>Level</th><th class="num">Plots</th><th><span class="visually-hidden">Share</span></th><th>In the search</th></tr></thead>
+      <tbody><tr class="in">
+      <th scope="row"><span class="lvl">Commercial zoning stated</span><span class="note">GE, GI, MK or MU: Gewerbe-, Industrie-, Kerngebiet or urbanes Gebiet</span></th>
+      <td class="num">730</td>
+      <td class="bar-cell"><span class="bar on" style="width:2.6%"></span></td>
+      <td class="tag"><span class="chip">Default</span></td>
+    </tr><tr class="in">
+      <th scope="row"><span class="lvl">Mixed or special zoning stated</span><span class="note">MI, SO or MD: commercial use allowed in part; check the plan</span></th>
+      <td class="num">820</td>
+      <td class="bar-cell"><span class="bar on" style="width:2.9%"></span></td>
+      <td class="tag"><span class="chip">Default</span></td>
+    </tr><tr class="in">
+      <th scope="row"><span class="lvl">Commercial use stated, no class</span><span class="note">From a permit or “Gewerbegrundstück” to “suitable for commercial purposes”; read the quote</span></th>
+      <td class="num">2,100</td>
+      <td class="bar-cell"><span class="bar on" style="width:7.5%"></span></td>
+      <td class="tag"><span class="chip">Default</span></td>
+    </tr><tr class="">
+      <th scope="row"><span class="lvl">Building land, use not stated</span><span class="note">Bauland, §34 or a B-Plan, but not what may be built</span></th>
+      <td class="num">27,859</td>
+      <td class="bar-cell"><span class="bar " style="width:100.0%"></span></td>
+      <td class="tag"><span class="chip off">On request</span></td>
+    </tr><tr class="">
+      <th scope="row"><span class="lvl">Residential zoning stated</span><span class="note">WA, WR, WB or WS</span></th>
+      <td class="num">1,876</td>
+      <td class="bar-cell"><span class="bar " style="width:6.7%"></span></td>
+      <td class="tag"><span class="chip off">On request</span></td>
+    </tr><tr class="">
+      <th scope="row"><span class="lvl">Leisure Sondergebiet</span><span class="note">Weekend or holiday houses, camping, allotments</span></th>
+      <td class="num">42</td>
+      <td class="bar-cell"><span class="bar " style="width:0.6%"></span></td>
+      <td class="tag"><span class="chip off">On request</span></td>
+    </tr><tr class="">
+      <th scope="row"><span class="lvl">Not building land</span><span class="note">Außenbereich §35, farmland, forest</span></th>
+      <td class="num">4,383</td>
+      <td class="bar-cell"><span class="bar " style="width:15.7%"></span></td>
+      <td class="tag"><span class="chip off">On request</span></td>
+    </tr><tr class="">
+      <th scope="row"><span class="lvl">Nothing stated</span><span class="note">The text says nothing about what may be built</span></th>
+      <td class="num">13,720</td>
+      <td class="bar-cell"><span class="bar " style="width:49.2%"></span></td>
+      <td class="tag"><span class="chip off">On request</span></td>
+    </tr></tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <header><h2>By Land</h2>
+    <p>Plots at the three default levels, and how many have 5,000 m² or more. The smaller columns split them by level.</p></header>
+    <div class="table-wrap"><table>
+      <thead><tr><th>Land</th><th class="num">Default</th><th></th><th class="num">≥ 5,000 m²</th><th class="num">Zoning</th><th class="num">Mixed</th><th class="num">Use stated</th><th class="num">All plots</th></tr></thead>
+      <tbody><tr>
+      <th scope="row">Bayern</th>
+      <td class="num strong">660</td>
+      <td class="bar-cell"><span class="bar on" style="width:100.0%"></span></td>
+      <td class="num">187</td>
+      <td class="num muted">132</td>
+      <td class="num muted">164</td>
+      <td class="num muted">364</td>
+      <td class="num muted">10,270</td>
+    </tr><tr>
+      <th scope="row">Nordrhein-Westfalen</th>
+      <td class="num strong">405</td>
+      <td class="bar-cell"><span class="bar on" style="width:61.4%"></span></td>
+      <td class="num">115</td>
+      <td class="num muted">79</td>
+      <td class="num muted">64</td>
+      <td class="num muted">262</td>
+      <td class="num muted">5,602</td>
+    </tr><tr>
+      <th scope="row">Baden-Württemberg</th>
+      <td class="num strong">364</td>
+      <td class="bar-cell"><span class="bar on" style="width:55.2%"></span></td>
+      <td class="num">75</td>
+      <td class="num muted">89</td>
+      <td class="num muted">98</td>
+      <td class="num muted">177</td>
+      <td class="num muted">5,655</td>
+    </tr><tr>
+      <th scope="row">Niedersachsen</th>
+      <td class="num strong">355</td>
+      <td class="bar-cell"><span class="bar on" style="width:53.8%"></span></td>
+      <td class="num">100</td>
+      <td class="num muted">58</td>
+      <td class="num muted">120</td>
+      <td class="num muted">177</td>
+      <td class="num muted">4,575</td>
+    </tr><tr>
+      <th scope="row">Sachsen</th>
+      <td class="num strong">329</td>
+      <td class="bar-cell"><span class="bar on" style="width:49.8%"></span></td>
+      <td class="num">166</td>
+      <td class="num muted">50</td>
+      <td class="num muted">51</td>
+      <td class="num muted">228</td>
+      <td class="num muted">3,921</td>
+    </tr><tr>
+      <th scope="row">Hessen</th>
+      <td class="num strong">298</td>
+      <td class="bar-cell"><span class="bar on" style="width:45.2%"></span></td>
+      <td class="num">99</td>
+      <td class="num muted">66</td>
+      <td class="num muted">78</td>
+      <td class="num muted">154</td>
+      <td class="num muted">3,192</td>
+    </tr><tr>
+      <th scope="row">Brandenburg</th>
+      <td class="num strong">284</td>
+      <td class="bar-cell"><span class="bar on" style="width:43.0%"></span></td>
+      <td class="num">130</td>
+      <td class="num muted">50</td>
+      <td class="num muted">51</td>
+      <td class="num muted">183</td>
+      <td class="num muted">4,878</td>
+    </tr><tr>
+      <th scope="row">Sachsen-Anhalt</th>
+      <td class="num strong">205</td>
+      <td class="bar-cell"><span class="bar on" style="width:31.1%"></span></td>
+      <td class="num">108</td>
+      <td class="num muted">30</td>
+      <td class="num muted">40</td>
+      <td class="num muted">135</td>
+      <td class="num muted">2,150</td>
+    </tr><tr>
+      <th scope="row">Mecklenburg-Vorpommern</th>
+      <td class="num strong">176</td>
+      <td class="bar-cell"><span class="bar on" style="width:26.7%"></span></td>
+      <td class="num">65</td>
+      <td class="num muted">34</td>
+      <td class="num muted">29</td>
+      <td class="num muted">113</td>
+      <td class="num muted">2,184</td>
+    </tr><tr>
+      <th scope="row">Rheinland-Pfalz</th>
+      <td class="num strong">154</td>
+      <td class="bar-cell"><span class="bar on" style="width:23.3%"></span></td>
+      <td class="num">36</td>
+      <td class="num muted">31</td>
+      <td class="num muted">53</td>
+      <td class="num muted">70</td>
+      <td class="num muted">2,970</td>
+    </tr><tr>
+      <th scope="row">Schleswig-Holstein</th>
+      <td class="num strong">134</td>
+      <td class="bar-cell"><span class="bar on" style="width:20.3%"></span></td>
+      <td class="num">40</td>
+      <td class="num muted">31</td>
+      <td class="num muted">30</td>
+      <td class="num muted">73</td>
+      <td class="num muted">1,774</td>
+    </tr><tr>
+      <th scope="row">Thüringen</th>
+      <td class="num strong">107</td>
+      <td class="bar-cell"><span class="bar on" style="width:16.2%"></span></td>
+      <td class="num">51</td>
+      <td class="num muted">36</td>
+      <td class="num muted">19</td>
+      <td class="num muted">52</td>
+      <td class="num muted">1,708</td>
+    </tr><tr>
+      <th scope="row">Berlin</th>
+      <td class="num strong">63</td>
+      <td class="bar-cell"><span class="bar on" style="width:9.5%"></span></td>
+      <td class="num">10</td>
+      <td class="num muted">14</td>
+      <td class="num muted">3</td>
+      <td class="num muted">46</td>
+      <td class="num muted">1,118</td>
+    </tr><tr>
+      <th scope="row">Hamburg</th>
+      <td class="num strong">60</td>
+      <td class="bar-cell"><span class="bar on" style="width:9.1%"></span></td>
+      <td class="num">17</td>
+      <td class="num muted">18</td>
+      <td class="num muted">5</td>
+      <td class="num muted">37</td>
+      <td class="num muted">696</td>
+    </tr><tr>
+      <th scope="row">Saarland</th>
+      <td class="num strong">29</td>
+      <td class="bar-cell"><span class="bar on" style="width:4.4%"></span></td>
+      <td class="num">8</td>
+      <td class="num muted">4</td>
+      <td class="num muted">8</td>
+      <td class="num muted">17</td>
+      <td class="num muted">649</td>
+    </tr><tr>
+      <th scope="row">Bremen</th>
+      <td class="num strong">27</td>
+      <td class="bar-cell"><span class="bar on" style="width:4.1%"></span></td>
+      <td class="num">8</td>
+      <td class="num muted">8</td>
+      <td class="num muted">7</td>
+      <td class="num muted">12</td>
+      <td class="num muted">188</td>
+    </tr></tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <header><h2>Four searches, run on the live service</h2>
+    <p>Each search below was run against the live API. It shows the request, how many plots match and the first results with the quote behind each. The agency is linked to its own page where it has one; a private seller is never named.</p></header>
+    <div class="examples"><article class="example" id="bayern">
+      <header><h3>Stated GE/GI/MK/MU zoning in Bayern, 5,000 m² or more, for sale</h3><p class="count"><strong>47</strong> plots match</p></header>
+      <details><summary>The request</summary><pre><code>{
+  &quot;criteria&quot;: {
+    &quot;regions&quot;: [
+      &quot;Bayern&quot;
+    ],
+    &quot;plot_area_min&quot;: 5000,
+    &quot;commercial_use&quot;: [
+      &quot;zoned_commercial&quot;
+    ],
+    &quot;operation&quot;: &quot;sale&quot;
+  },
+  &quot;limit&quot;: 5,
+  &quot;sort&quot;: &quot;area_desc&quot;
+}</code></pre></details>
+      <div class="table-wrap"><table class="results">
+        <thead><tr><th>Plot</th><th class="num">Area</th><th class="num">Asking price</th><th>Why it matches (quote from the property's text)</th><th>Agency</th></tr></thead>
+        <tbody><tr>
+          <td class="plot"><span class="ptitle">Gewerbegebiet Theuern - Parzelle 8</span><span class="sub">Kümmersbruck, Bayern</span></td>
+          <td class="num">30,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Gewerbegebiet Theuern</q><span class="sub">Zoning GE · Serviced</span></td>
+          <td>Wirtschaftsförderungsgesellschaft Amberg mbH</td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Gewerbegrundstück sofort bebaubar mit direkter Anbindung an die Bundesstraße!</span><span class="sub">Heining, Bayern</span></td>
+          <td class="num">30,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>GE-Widmung</q><span class="sub">Zoning GE · Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/10787/67730-Passau-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">91552 Brodswinden - Gewerbegrundstück in Brodswinden-Süd</span><span class="sub">Brodswinden, Bayern</span></td>
+          <td class="num">25,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>GE/GI</q><span class="sub">Zoning GE · Serviced</span></td>
+          <td><a href="https://www.lagerflaeche.de/lager/gewerbegrundstueck-in-brodswinden-sued-5262" target="_blank" rel="noopener">Wirtschaftsförderung Ansbach</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">25.000 m² Logistikgrundstück in Velburg an der Autobahn A 3 - Landkreis Neumarkt in der Oberpfalz</span><span class="sub">Velburg, Bayern</span></td>
+          <td class="num">25,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Das lokale Gewerbegebiet in 92355 Velburg</q><span class="sub">Zoning GE · Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/10791/67735-Velburg-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">24.000 m² Grundstück in Hallbergmoos nahe Flughafen München - Landkreis Freising</span><span class="sub">85399 Hallbergmoos, Bayern</span></td>
+          <td class="num">24,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>befindet sich in einem äußerst attraktiven Gewerbegebiet.</q><span class="sub">Zoning GE</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/22781/95032-Hallbergmoos-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr></tbody>
+      </table></div>
+      
+    </article><article class="example" id="sachsen">
+      <header><h3>Sachsen, 10,000 m² or more, not stated as unserviced (default levels)</h3><p class="count"><strong>115</strong> plots match</p></header>
+      <details><summary>The request</summary><pre><code>{
+  &quot;criteria&quot;: {
+    &quot;regions&quot;: [
+      &quot;Sachsen&quot;
+    ],
+    &quot;plot_area_min&quot;: 10000,
+    &quot;serviced&quot;: true
+  },
+  &quot;limit&quot;: 5,
+  &quot;sort&quot;: &quot;area_desc&quot;
+}</code></pre></details>
+      <div class="table-wrap"><table class="results">
+        <thead><tr><th>Plot</th><th class="num">Area</th><th class="num">Asking price</th><th>Why it matches (quote from the property's text)</th><th>Agency</th></tr></thead>
+        <tbody><tr>
+          <td class="plot"><span class="ptitle">Großflächiges Areal bin Freiberg mit Optionen für Gewerbe &amp; Erneuerbare Energien</span><span class="sub">Freiberg, Sachsen</span></td>
+          <td class="num">340,136 m²</td>
+          <td class="num">€2,000,000<span class="sub">€6/m²</span></td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Ein Teilbereich des Grundstücks ist im aktuellen Flächennutzungsplan bereits als Gewerbegebiet ausgewiesen</q><span class="sub">from the Flächennutzungsplan (not binding)</span><span class="sub">Zoning GE</span></td>
+          <td><a href="https://www.immobilie1.de/09599-freiberg-grundstuck-grossflachiges-areal-bin-freiberg-mit-optionen-fur-gewerbe-erneuerbare-energien-32514529" target="_blank" rel="noopener">Aengevelt Immobilien GmbH &amp; Co. KG</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">200.000 m² Baugrund in Weißwasser nahe Güterverkehrszentrum Terminal Schwarzheide - Landkreis Görlitz</span><span class="sub">Weißwasser/Oberlausitz, Sachsen</span></td>
+          <td class="num">200,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>ist zur gewerblichen Baunutzung angedacht.</q></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/17854/86411-Weisswasser-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">150.000 m² Erweiterungsfläche in Coswig nahe Flughafen Dresden - Landkreis Meißen</span><span class="sub">Coswig, Sachsen</span></td>
+          <td class="num">150,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Ein rechtskräftiger Bebauungsplan ist für diese Liegenschaft mit GE-Widmung bereits vorhanden.</q><span class="sub">from the Bebauungsplan</span><span class="sub">Zoning GE · Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/18164/86869-Coswig-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Gewerbegrundstücke im Industrie- und Gewerbegebiet Großenhain - Provisionsfrei!</span><span class="sub">Großenhain, Sachsen</span></td>
+          <td class="num">145,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>Gewerbegrundstücke im Industrie- und Gewerbegebiet Großenhain</q><span class="sub">Serviced</span></td>
+          <td>Stadtverwaltung Großenhain</td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Grundstück in Bad Düben – Entwicklungsareal mit Wohnbaupotenzial vielseitiger und Nutzbarkeit.</span><span class="sub">Bad Düben, Sachsen</span></td>
+          <td class="num">134,340 m²</td>
+          <td class="num">€2,950,000<span class="sub">€22/m²</span></td>
+          <td class="evidence"><span class="chip lvl-zoned_mixed_or_special">Mixed/special zoning</span><q>Darüber hinaus ist es möglich, kleinere Gewerbebetriebe im Mischgebiet zu integrieren.</q><span class="sub">Zoning MI · Serviced</span></td>
+          <td>Place2be Immobilien GmbH</td>
+        </tr></tbody>
+      </table></div>
+      
+    </article><article class="example" id="nrw">
+      <header><h3>Nordrhein-Westfalen, 3,000 m² or more, up to €150/m² (default levels)</h3><p class="count"><strong>40</strong> plots match</p></header>
+      <details><summary>The request</summary><pre><code>{
+  &quot;criteria&quot;: {
+    &quot;regions&quot;: [
+      &quot;Nordrhein-Westfalen&quot;
+    ],
+    &quot;plot_area_min&quot;: 3000,
+    &quot;sale_price_m2_max&quot;: 150
+  },
+  &quot;limit&quot;: 5,
+  &quot;sort&quot;: &quot;price_m2_asc&quot;
+}</code></pre></details>
+      <div class="table-wrap"><table class="results">
+        <thead><tr><th>Plot</th><th class="num">Area</th><th class="num">Asking price</th><th>Why it matches (quote from the property's text)</th><th>Agency</th></tr></thead>
+        <tbody><tr>
+          <td class="plot"><span class="ptitle">Provisionsfrei*  Grundstück in 32683 Barntrup, Am Pumpwerk</span><span class="sub">Barntrup, Nordrhein-Westfalen</span></td>
+          <td class="num">4,225 m²</td>
+          <td class="num">€95,000<span class="sub">€22/m²</span></td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>planungsrechtlich für eine gewerbliche Nutzung vorgesehen</q></td>
+          <td><a href="https://www.immoforless.de/deutschland/nordrhein-westfalen/32683-barntrup/grundstueck-kaufen/137361:12570814132:0:mr2.html" target="_blank" rel="noopener">Argetra GmbH</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Ackerfläche mit Baugenehmigung für eine professionelle Reitanlage in Köln!</span><span class="sub">Rondorf, Nordrhein-Westfalen</span></td>
+          <td class="num">32,515 m²</td>
+          <td class="num">€800,000<span class="sub">€25/m²</span></td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>gewerblichen Pferdewirtschaftsbetrieb</q><span class="sub">Permit stated</span></td>
+          <td><a href="https://www.kleinanzeigen.de/s-anzeige/3364368068" target="_blank" rel="noopener">Greif &amp; Meyer GmbH</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Gewerbegrundstück in Iserlohn Sümmern - ideal für Halle, Lager oder Gewerbebau!</span><span class="sub">58640 Iserlohn, Nordrhein-Westfalen</span></td>
+          <td class="num">8,900 m²</td>
+          <td class="num">€250,000<span class="sub">€28/m²</span></td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>Gewerbegrundstück in Iserlohn Sümmern - ideal für Halle, Lager oder Gewerbebau!</q></td>
+          <td><a href="https://www.kleinanzeigen.de/s-anzeige/3453585752" target="_blank" rel="noopener">Bock &amp; Partner Immobilien</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Teilbares gewerbliches Grundstück in Rahden-Wehe für 29,- €/m² zu verkaufen - Investieren Sie flexib</span><span class="sub">Rahden, Nordrhein-Westfalen</span></td>
+          <td class="num">11,997 m²</td>
+          <td class="num">€347,913<span class="sub">€29/m²</span></td>
+          <td class="evidence"><span class="chip lvl-zoned_mixed_or_special">Mixed/special zoning</span><q>Laut Bebauungsplan ist das Grundstück als MD (Ge) II o klassifiziert</q><span class="sub">from the Bebauungsplan</span><span class="sub">Zoning MD · Serviced · GRZ 0.8</span></td>
+          <td><a href="https://www.kleinanzeigen.de/s-anzeige/3118287589" target="_blank" rel="noopener">BÄCKER Immobilien</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Attraktives Gewerbegrundstück in Barntrup!</span><span class="sub">Barntrup, Nordrhein-Westfalen</span></td>
+          <td class="num">4,225 m²</td>
+          <td class="num">€129,000<span class="sub">€31/m²</span></td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Gebietsausweisung: Gewerbegebiet</q><span class="sub">Zoning GE · GRZ 0.8</span></td>
+          <td><a href="https://www.kleinanzeigen.de/s-anzeige/3424188121" target="_blank" rel="noopener">Detmold</a></td>
+        </tr></tbody>
+      </table></div>
+      
+    </article><article class="example" id="autobahn">
+      <header><h3>Anywhere in Germany, &quot;Autobahn&quot; in the text, 20,000 m² or more, stated commercial zoning or use</h3><p class="count"><strong>67</strong> plots match</p></header>
+      <details><summary>The request</summary><pre><code>{
+  &quot;criteria&quot;: {
+    &quot;keywords&quot;: [
+      &quot;Autobahn&quot;
+    ],
+    &quot;plot_area_min&quot;: 20000,
+    &quot;commercial_use&quot;: [
+      &quot;zoned_commercial&quot;,
+      &quot;commercial_use_stated&quot;
+    ]
+  },
+  &quot;limit&quot;: 5,
+  &quot;sort&quot;: &quot;area_desc&quot;
+}</code></pre></details>
+      <div class="table-wrap"><table class="results">
+        <thead><tr><th>Plot</th><th class="num">Area</th><th class="num">Asking price</th><th>Why it matches (quote from the property's text)</th><th>Agency</th></tr></thead>
+        <tbody><tr>
+          <td class="plot"><span class="ptitle">184.000 m² Grundstück in Neuwied an der Autobahn A 48 - Landkreis Neuwied</span><span class="sub">56566 Neuwied, Rheinland-Pfalz</span></td>
+          <td class="num">184,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>Geeignet für: Gewerbe, Logistik, Industrie, Produktion, Handel</q><span class="sub">Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/22755/94774-Neuwied-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">100.000 m² Grundstück in Chemnitz an der Autobahn A 4</span><span class="sub">Röhrsdorf, Sachsen</span></td>
+          <td class="num">100,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>ist zur gewerblichen Baunutzung ausgewiesen</q><span class="sub">Serviced · GRZ 0.8</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/18165/86871-Chemnitz-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">Großzügige Grundstücksfläche nahe der Deutsch-Polnischen Grenze</span><span class="sub">Kodersdorf, Sachsen</span></td>
+          <td class="num">100,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>ist zur gewerblichen Baunutzung ausgewiesen</q><span class="sub">Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/18106/86790-Kodersdorf-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">100.000 m² Logistikgrundstück in Burkau an der Autobahn A 4 - Landkreis Bautzen</span><span class="sub">Burkau, Sachsen</span></td>
+          <td class="num">100,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-commercial_use_stated">Commercial use stated</span><q>ist zur gewerblichen Baunutzung ausgewiesen.</q><span class="sub">Serviced</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/22066/93001-Burkau-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr><tr>
+          <td class="plot"><span class="ptitle">100.000 m² Baugrund in Reinsberg nahe Güterverkehrszentrum GVZ Dresden - Landkreis Mittelsachsen</span><span class="sub">09629 Reinsberg, Sachsen</span></td>
+          <td class="num">100,000 m²</td>
+          <td class="num">Not stated</td>
+          <td class="evidence"><span class="chip lvl-zoned_commercial">Commercial zoning</span><q>Gewerbegebiet in 09629 Reinsberg</q><span class="sub">Zoning GE</span></td>
+          <td><a href="https://www.logivest.de/logistikimmobilien/profil/22070/93010-Reinsberg-Grundstueck-kaufen" target="_blank" rel="noopener">Logivest</a></td>
+        </tr></tbody>
+      </table></div>
+      
+    </article></div>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2>What you can rely on</h2>
+      <ul>
+        <li>Every level rests on a quote that appears word for word in the property's text. A quote that is not in the text, or does not say the fact, is dropped.</li>
+        <li>Hand checks on 16 October: in 40 random plots at the default levels every quote was real. After we stopped counting a plot's current use as permission, 25 of 25 re-read “commercial use stated” plots say commercial use is allowed (“Gewerbegrundstück”, “gewerbliche Nutzung … zulässig”).</li>
+        <li>Of the plots whose title says Gewerbegrundstück, Gewerbegebiet, Industriegebiet or Gewerbefläche, 98% are in the default levels.</li>
+        <li>A plot advertised by several agencies appears once; the other agencies are named with it.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>What it is not</h2>
+      <ul>
+        <li>Not a zoning check. The level is what the advertiser writes. A class read from a Flächennutzungsplan is marked as such: it is not binding on the plot.</li>
+        <li>Locations are approximate. No German plot in the data has an exact location, so plots are not matched to zoning maps yet.</li>
+        <li>"Commercial use stated" includes claims such as "suitable for commercial purposes". Read the quote.</li>
+        <li>The data files some plots abroad under German places. A plot whose title or text says it lies in another country is left out, each with the quote that says so.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <header><h2>Questions to start with</h2>
+    <p>What a team usually settles first when it tries the search.</p></header>
+    <ol class="questions">
+      <li>Which Länder or regions matter for this project, and what plot size range?</li>
+      <li>Do the three default levels match what your project can use? Should "building land, use not stated" (mostly §34 plots) be included for a project?</li>
+      <li>Is "suitable for commercial purposes" good enough to show, or only a stated class or permit?</li>
+      <li>Do you need location figures per plot (road access, drive times, population), zoning maps where the Land publishes them, or both?</li>
+      <li>How will you use it: through the API, an AI assistant (MCP), or the search page at expansion.casafari.com?</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Source: Casafari's property graph, Germany, active plots (building plots and rural land), read with Gemini through the Batch API. Counts are distinct plots. Asking prices, not agreed prices.</p>
+    <p>Available now on <a href="https://expansion.casafari.com/plots">expansion.casafari.com/plots</a>, and through Claro's API and MCP server (<code>https://platform.casafari.com/mcp/claro</code>) as <code>search_plots</code> and <code>get_plot</code>.</p>
+  </footer>
+</main>
+<style>.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}</style>
+
+</body></html>

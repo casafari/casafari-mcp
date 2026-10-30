@@ -29,6 +29,8 @@ Connect Claude, ChatGPT, Cursor, VS Code, Gemini CLI or your own agent to five M
 
 Claro AI is listed in [Claude's Connectors Directory](https://claude.ai/directory/claro-ai-by-casafari): open it in Claude, click **Add**, sign in with your Casafari platform account, and ask.
 
+Claro also searches plots of land in Germany by what their own text says may be built: see the [sample report on commercial plots in Germany](https://casafari.github.io/casafari-mcp/reports/german-plots.html), with counts per Land and four searches run on the live service.
+
 ## Now in the Cursor Directory
 
 [![Casafari in the Cursor Directory](assets/screenshots/cursor-directory.png)](https://cursor.directory/plugins/casafari)
